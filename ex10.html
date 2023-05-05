@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex10</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+        <script>
+            function sum(left, right){
+                var res = 0;
+                res = left + right ;
+                document.write('<li>'+res+'</li>'); 
+            }
+            function sumColorRed(left, right){
+                document.write('<div style="color:red">'+left+right+'</div><br>');
+            }
+            sum(2,3);
+            sum(5,7);
+            sumColorRed(7,9);
+        </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <h2>Return</h2>
+    <script>
+        function sum2(left, right){
+            return left + right;
+        }
+        document.write(sum2(2,3)+'<br>');
+        document.write('<div style="color:red">'+sum2(7,8)+'</div>');
+        document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div><br>');
+    </script>
+</body>
+</html>
